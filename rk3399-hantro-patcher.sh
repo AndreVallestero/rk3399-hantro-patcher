@@ -1,6 +1,6 @@
 #!/bin/bash
 
-KERNEL_DIR=linux-pinebook-pro
+KERNEL_DIR=../linux-pinebook-pro
 PATCH_DIR=patches
 
 echo Applying patches in $KERNEL_DIR
