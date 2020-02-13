@@ -1,10 +1,11 @@
 #!/bin/bash
 
 KERNEL_DIR=../linux-pinebook-pro
-PATCH_DIR=patches
+PATCH_DIR=$(pwd)/patches
 
-echo Applying patches in $KERNEL_DIR
+cd $KERNEL_DIR
+echo Applying patches in $(pwd)
 for i in $PATCH_DIR/*.patch; do
 	echo applying $(basename "$i")
-	git apply --directory=$KERNEL_DIR --whitespace=nowarn $i
+	git apply --whitespace=nowarn $i
 done
