@@ -1,0 +1,35 @@
+ .../arch/arm64/configs/pinebook_pro_defconfig                    | 9 +++------
+ 1 file changed, 3 insertions(+), 6 deletions(-)
+
+diff --git linux-pinebook-pro/arch/arm64/configs/pinebook_pro_defconfig linux-rockchip/arch/arm64/configs/pinebook_pro_defconfig
+index ddd73a2..33a68ce 100644
+--- linux-pinebook-pro/arch/arm64/configs/pinebook_pro_defconfig
++++ linux-rockchip/arch/arm64/configs/pinebook_pro_defconfig
+@@ -1592,6 +1592,7 @@ CONFIG_MEDIA_RADIO_SUPPORT=y
+ CONFIG_MEDIA_SDR_SUPPORT=y
+ CONFIG_MEDIA_CEC_SUPPORT=y
+ CONFIG_MEDIA_CEC_RC=y
++CONFIG_MEDIA_CONTROLLER=y
+ CONFIG_MEDIA_CONTROLLER_REQUEST_API=y
+ CONFIG_VIDEO_V4L2_SUBDEV_API=y
+ CONFIG_DVB_MAX_ADAPTERS=8
+@@ -1785,17 +1786,13 @@ CONFIG_RADIO_TEA5764=m
+ CONFIG_RADIO_SAA7706H=m
+ CONFIG_RADIO_TEF6862=m
+ CONFIG_RADIO_WL1273=m
+-CONFIG_DRM=m
++CONFIG_DRM=y
+ CONFIG_DRM_LOAD_EDID_FIRMWARE=y
+ CONFIG_DRM_I2C_NXP_TDA998X=m
+ CONFIG_DRM_HDLCD=m
+ CONFIG_DRM_MALI_DISPLAY=m
+-CONFIG_DRM_RADEON=m
+-CONFIG_DRM_RADEON_USERPTR=y
+-CONFIG_DRM_AMDGPU=m
+-CONFIG_DRM_NOUVEAU=m
+ CONFIG_DRM_VGEM=m
+-CONFIG_DRM_ROCKCHIP=m
++CONFIG_DRM_ROCKCHIP=y
+ CONFIG_ROCKCHIP_ANALOGIX_DP=y
+ CONFIG_ROCKCHIP_CDN_DP=y
+ CONFIG_ROCKCHIP_DW_HDMI=y
